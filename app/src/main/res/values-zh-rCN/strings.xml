@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BuaiXueOS</string>
+    <string name="main_avatar_desc">用户的头像</string>
+    <string name="main_user_name">用户0001</string>
+    <string name="main_preview">预习</string>
+    <string name="main_homework">作业</string>
+    <string name="main_wrong_questions">错题本</string>
+    <string name="main_app_1">教材</string>
+    <string name="main_app_2">语文</string>
+    <string name="main_app_3">i 数学</string>
+    <string name="main_app_4">英语</string>
+    <string name="main_app_5">更多</string>
+    <string name="main_taskbar_button_1">返回</string>
+    <string name="main_taskbar_button_2">主页</string>
+    <string name="main_taskbar_button_3">任务</string>
+    <string name="main_taskbar_right_icon_1">电池</string>
+    <string name="main_taskbar_right_time">中午 25:12</string>
+    <string name="main_taskbar_right_day">星期NaN</string>
+    <string name="preview_left_button">全部科目</string>
+    <string name="preview_right_radio_1">待完成（Infinity）</string>
+    <string name="preview_right_radio_2">已完成（NaN）</string>
+</resources>

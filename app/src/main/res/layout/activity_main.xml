@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mainUserNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="148dp"
+        android:text="@string/main_user_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/mainAvatarCardView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainAvatarCardView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="124dp"
+        app:cardCornerRadius="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/mainAvatarImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:contentDescription="@string/main_avatar_desc"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/mainTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="124dp"
+        android:text="25:12"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mainPreviewButton"
+        android:layout_width="312dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#6730E8"
+        android:contentDescription="@string/main_preview"
+        android:onClick="openPreview"
+        android:text="@string/main_preview"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainAvatarCardView" />
+
+    <Button
+        android:id="@+id/mainHomeworkButton"
+        android:layout_width="312dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="484dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#4CAF50"
+        android:contentDescription="@string/main_preview"
+        android:onClick="openPreview"
+        android:text="@string/main_homework"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainAvatarCardView" />
+
+    <Button
+        android:id="@+id/mainWrongQuestionsButton"
+        android:layout_width="312dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="844dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#00BCD4"
+        android:contentDescription="@string/main_preview"
+        android:onClick="wrongQuestions"
+        android:text="@string/main_wrong_questions"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainAvatarCardView" />
+
+    <LinearLayout
+        android:id="@+id/mainApp1LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginBottom="130dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/mainApp1Button"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="#1BC359"
+            android:onClick="openBook"
+            android:text="404 Not Found"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/mainApp1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/main_app_1"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainApp2LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="328dp"
+        android:layout_marginBottom="130dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/mainApp2Button"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="#FF5031"
+            android:onClick="openPreview"
+            android:text="404 Not Found"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/mainApp2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/main_app_2"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainApp3LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="500dp"
+        android:layout_marginBottom="130dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/mainApp3Button"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="#31A6FF"
+            android:text="404 Not Found"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/mainApp3TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/main_app_3"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainApp4LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="672dp"
+        android:layout_marginBottom="130dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/mainApp4Button"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="#FFCF1F"
+            android:onClick="wrongQuestions"
+            android:text="404 Not Found"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/mainApp4TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/main_app_4"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainApp5LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="844dp"
+        android:layout_marginBottom="130dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/mainApp5Button"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="#00E1FF"
+            android:onClick="wrongQuestions"
+            android:text="404 Not Found"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/mainApp5TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/main_app_5"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainTaskbarLinearLayout"
+        android:layout_width="1280dp"
+        android:layout_height="60dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/mainTaskbarIconImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/main_taskbar_icon" />
+
+        <ImageButton
+            android:id="@+id/mainTaskbarButton1ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/main_taskbar_button_1"
+            app:srcCompat="@drawable/main_taskbar_button_1" />
+
+        <ImageButton
+            android:id="@+id/mainTaskbarButton2ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/main_taskbar_button_2"
+            app:srcCompat="@drawable/main_taskbar_button_2" />
+
+        <ImageButton
+            android:id="@+id/mainTaskbarButton3ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/main_taskbar_button_3"
+            app:srcCompat="@drawable/main_taskbar_button_3" />
+
+        <LinearLayout
+            android:id="@+id/mainTaskbarRightLinearLayout"
+            android:layout_width="1000dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/mainTaskbarRightIcon1ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/main_taskbar_right_icon_1"
+                app:srcCompat="@drawable/main_taskbar_right_icon_1" />
+
+            <LinearLayout
+                android:id="@+id/mainTaskbarRightDateLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mainTaskbarRightDateTimeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_taskbar_right_time"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/mainTaskbarRightDateDayTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_taskbar_right_day"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

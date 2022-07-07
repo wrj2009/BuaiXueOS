@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BuaiXueOS</string>
+    <string name="main_avatar_desc">The avatar of user</string>
+    <string name="main_user_name">User 0001</string>
+    <string name="main_preview">Preview</string>
+    <string name="main_homework">Homework</string>
+    <string name="main_wrong_questions">Wrong questions</string>
+    <string name="main_app_1">Book</string>
+    <string name="main_app_2">Chinese</string>
+    <string name="main_app_3">i Mathematics</string>
+    <string name="main_app_4">English</string>
+    <string name="main_app_5">More</string>
+    <string name="main_taskbar_button_1">Back</string>
+    <string name="main_taskbar_button_2">Home</string>
+    <string name="main_taskbar_button_3">Tasks</string>
+    <string name="main_taskbar_right_icon_1">Battery</string>
+    <string name="main_taskbar_right_time">Noon 25:12</string>
+    <string name="main_taskbar_right_day">NaNday</string>
+    <string name="preview_left_button">All Subjects</string>
+    <string name="preview_right_radio_1">To Do (Infinity)</string>
+    <string name="preview_right_radio_2">Done (NaN)</string>
+</resources>
